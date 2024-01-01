@@ -1,0 +1,3 @@
+include:
+  - board: dis30
+    shield: settings_reset
