@@ -22,11 +22,8 @@ endif # USB
 config BT_CTLR
 	default BT
 
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
+config PINCTRL
+    default y
 
 config ZMK_EXT_POWER
 	default y

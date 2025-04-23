@@ -40,3 +40,7 @@ CONFIG_ZMK_RGB_UNDERGLOW_ON_START=y
 
 # Uncomment lines below to oled
 CONFIG_ZMK_DISPLAY=y
+
+# Enable both USB and BLE
+CONFIG_ZMK_USB=y
+CONFIG_ZMK_BLE=y
