@@ -18,10 +18,10 @@
         default_layer {
             label = " DIS30";
             bindings = <
-&kp ESC    &kp N1    &kp N2  &kp N3     &kp N4  &kp N5    &kp N6    &kp C_MUTE  &kp KP_N8  &kp KP_N9
-&kp TAB    &kp Q     &kp W   &kp E      &kp R   &kp T     &kp RET   &kp X       &kp KP_N5  &kp KP_N6
-&kp LSHFT  &kp A     &kp S   &kp D      &kp F   &kp G     &kp UP    &kp B       &kp KP_N2  &kp KP_N3
-&kp LCTRL  &kp LALT          &kp SPACE  &mo 1   &kp LEFT  &kp DOWN  &kp RIGHT   &kp KP_N0  &kp KP_DOT
+&kp ESC    &kp N1    &kp N2  &kp N3     &kp N4  &kp N5    &kp N6    &kp C_MUTE     &kp KP_N8  &kp KP_N9
+&kp TAB    &kp Q     &kp W   &kp E      &kp R   &kp T     &kp RET   &kp BACKSPACE  &kp KP_N5  &kp KP_N6
+&kp LSHFT  &kp A     &kp S   &kp D      &kp F   &kp G     &kp UP    &kp DEL        &kp KP_N2  &kp KP_N3
+&kp LCTRL  &kp LALT          &kp SPACE  &mo 1   &kp LEFT  &kp DOWN  &kp RIGHT      &kp KP_N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
