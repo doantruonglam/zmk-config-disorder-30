@@ -125,7 +125,7 @@
 		label = "BATTERY";
 		io-channels = <&adc 7>;
 		output-ohms = <2000000>;
-		full-ohms = <(2000000 + 910000)>;
+		full-ohms = <(2000000 + 920000)>;
 	};
 };
 
