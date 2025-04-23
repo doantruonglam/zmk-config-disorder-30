@@ -8,6 +8,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
+#include "dis30-layouts.dtsi"
 
 / {
 	model = "Dis30_B";
@@ -23,9 +24,10 @@
         zmk,underglow = &led_strip;
 		zephyr,console = &cdc_acm_uart;
 		zmk,battery = &vbatt;
+        zmk,physical-layout = &physical_layout0;
 	};
 
-	default_transform: keymap_transform_0 {
+	dis_all_transform: dis_all_transform {
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
 		rows = <4>;
@@ -40,6 +42,7 @@
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
+        label = "KSCAN";
 		diode-direction = "col2row";
 		row-gpios
 			= <&gpio0 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 0

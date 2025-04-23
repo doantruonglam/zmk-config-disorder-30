@@ -31,7 +31,10 @@ config ZMK_EXT_POWER
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
-config ZMK_SPLIT
+config ZMK_BLE
+    default y
+
+config ZMK_USB
     default y
 
 if ZMK_DISPLAY
