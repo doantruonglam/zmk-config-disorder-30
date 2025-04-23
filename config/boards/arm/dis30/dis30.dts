@@ -128,6 +128,9 @@
 
 &spi1 {
   compatible = "nordic,nrf-spim";
+  pinctrl-0 = <&spi3_default>;
+    pinctrl-1 = <&spi3_sleep>;
+    pinctrl-names = "default", "sleep";
   status = "okay";
   // WS2812B pinout (PX.Y = 32*X+Y)
   mosi-pin = <5>;
